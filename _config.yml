@@ -1,1 +1,15 @@
-theme: jekyll-theme-cayman
+name: Miranda Ragland
+author:
+  name: Miranda Ragland
+  email: mirandajanell@gmail.com
+  uri:
+  bio: A geek, software developer, idiot with a microphone, lover of coffee and a runner.
+  twitter: https://twitter.com/mirandajanell
+  github: https://github.com/mirandajanell
+description: The personal site of Miranda Ragland.
+timezone: America/Los_Angeles
+baseurl: ''
+url: http://www.mirandaragland.com
+exclude:
+  - node_modules
+  - package.json
