@@ -15,8 +15,14 @@
 
 			<div class="col-sm-4">
 				<h4>Social</h4>
-				<a href="{{ site.author.twitter }}" rel="me"><i class="fa fa-fw fa-twitter"></i>@MirandaJanell on Twitter</a><br>
-				<a href="{{ site.author.github }}" rel="me"><i class="fa fa-fw fa-github"></i>GitHub</a>
+				<ul class="list-unstyled">
+					<li><a href="{{ site.author.twitter }}" rel="me"><i class="fa fa-fw fa-twitter"></i>@MirandaJanell on Twitter</a></li>
+					<li><a href="{{ site.author.github }}" rel="me"><i class="fa fa-fw fa-github"></i>GitHub</a></li>
+				</ul>
+
+				<ul class="list-unstyled">
+					<li><a href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-fw fa-rss"></i>Subscribe via RSS</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>

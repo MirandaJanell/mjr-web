@@ -15,5 +15,7 @@ exclude:
   - .lock
   - Gemfile
   - package.json
+gems:
+  - jekyll-feed
 mjtheme:
   date_format: '%b %-d, %Y'
