@@ -3,8 +3,16 @@ layout: default
 ---
 <article class="h-entry">
 	<header>
-		<h1 class="p-name">{{ page.title | escape }}</h1>
+		<h3 class="p-name">{{ page.title | escape }}</h3>
+	</header>
 
+	<p class="p-summary">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+	<div class="e-content">
+		{{ content}}
+	</div>
+
+	<footer>
 		<p>
 			{% assign author_name = page.author %}
 
@@ -32,12 +40,14 @@ layout: default
 				{% assign date_format = site.mjtheme.date_format | default: "%b %-d, %Y" %}
         		{{ page.date | date: date_format }}
 			</time></a>
+
+			{% if page.tags %}
+			<ul class="list-inline">
+			{% for tag in page.tags %}
+				<li><a class="p-category label label-default" href="{{ site.baseurl }}{% link tags.html %}#{{ tag | url_escape }}">{{ tag | escape }}</a></li>
+			{% endfor %}
+			</ul>
+			{% endif %}
 		</p>
-	</header>
-
-	<p class="p-summary">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-
-	<div class="e-content">
-		{{ content}}
-	</div>
+	</footer>
 </article>
