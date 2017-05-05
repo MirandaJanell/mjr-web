@@ -2,14 +2,16 @@ name: Miranda Ragland
 author:
   name: Miranda Ragland
   email: mirandajanell@gmail.com
-  uri:
+  uri: http://mirandaragland.com
   bio: A geek, software developer, idiot with a microphone, lover of coffee and a runner.
-  twitter: https://twitter.com/mirandajanell
+  twitter: https://twitter.com/MirandaJanell
   github: https://github.com/mirandajanell
-description: The personal site of Miranda Ragland.
+description: Adventures on Code Monkey Island
 timezone: America/Los_Angeles
 baseurl: ''
 url: http://www.mirandaragland.com
 exclude:
   - node_modules
   - package.json
+mjtheme:
+  date_format: '%b %-d, %Y'

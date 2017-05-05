@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="h-entry">
+	<header>
+		<h3 class="p-name">{{ page.title | escape }}</h3>
+
+		<p>
+			{% assign author_name = page.author %}
+
+			{% if page.author.name %}
+				{% assign author_name = page.author.name %}
+				{% assign author_uri = page.author.uri %}
+			{% endif %}
+			
+			{% unless author_name %}
+				{% assign author_name = site.author.name %}
+				{% assign author_uri = site.author.uri %}
+			{% endunless %}
+			
+			{% if author_name %}
+			By <span>
+				{% if author_uri %}
+				<a href="{{ author_uri }}" class="p-author h-card">{{ author_name }}</a>
+				{% else %}
+				<span class="p-author h-card">{{ author_name }}</span>
+				{% endif %}
+			</span>
+			{% endif %}
+
+			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+				{% assign date_format = site.mjtheme.date_format | default: "%b %-d, %Y" %}
+        		{{ page.date | date: date_format }}
+			</time>
+		</p>
+	</header>
+
+	<p class="p-summary">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+	<div class="e-content">
+		{{ content}}
+	</div>
+</article>
