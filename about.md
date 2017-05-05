@@ -6,7 +6,7 @@ title: Miranda Ragland
 ## Professional Experience
 * [Software Anywhere](https://www.softwareanywhere.com)  
 Jan 2010 - Present  
-Alpha Code Monkey (Senior Software Architect)
+Co-Founder & Alpha Code Monkey (Senior Software Architect)
 
 * [C-Level Management](www.c-levelmgmt.com)  
 September 2006 -- December 2015  
