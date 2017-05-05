@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<h1>Posts</h1>
+
 <ul class="post-links">
 {% for post in site.posts %}
 	<li><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
