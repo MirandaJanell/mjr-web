@@ -6,12 +6,14 @@ author:
   bio: A geek, software developer, idiot with a microphone, lover of coffee and a runner.
   twitter: https://twitter.com/MirandaJanell
   github: https://github.com/mirandajanell
-description: Adventures on Code Monkey Island
+description: My adventures on Code Monkey Island
 timezone: America/Los_Angeles
 baseurl: ''
 url: http://www.mirandaragland.com
 exclude:
   - node_modules
+  - .lock
+  - Gemfile
   - package.json
 mjtheme:
   date_format: '%b %-d, %Y'
