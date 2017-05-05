@@ -25,13 +25,13 @@ layout: default
 				{% else %}
 				<span class="p-author h-card">{{ author_name }}</span>
 				{% endif %}
-			</span>
+			</span> on 
 			{% endif %}
 
-			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+			<a class="u-url" href="{{ page.url | absolute_url }}"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
 				{% assign date_format = site.mjtheme.date_format | default: "%b %-d, %Y" %}
         		{{ page.date | date: date_format }}
-			</time>
+			</time></a>
 		</p>
 	</header>
 
