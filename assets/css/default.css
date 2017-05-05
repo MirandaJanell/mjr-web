@@ -5,6 +5,9 @@ html {
 body {
   margin-bottom: 185px;
 }
+body > .container {
+  padding-top: 30px;
+}
 .footer {
   position: absolute;
   bottom: 0;
