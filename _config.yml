@@ -1,4 +1,4 @@
-name: Miranda Ragland
+title: Miranda Ragland
 author:
   name: Miranda Ragland
   email: mirandajanell@gmail.com
@@ -15,7 +15,7 @@ exclude:
   - .lock
   - Gemfile
   - package.json
-gems:
+plugins:
   - jekyll-feed
 mjtheme:
   date_format: '%b %-d, %Y'
